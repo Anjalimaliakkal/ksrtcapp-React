@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavBar from './NavBar'
 import axios from 'axios'
 
-const AddStudent = () => {
+const AddBus = () => {
     const [data, setData] = useState(
         {
             "busname": "",
@@ -62,4 +62,4 @@ const AddStudent = () => {
     )
 }
 
-export default AddStudent
+export default AddBus
