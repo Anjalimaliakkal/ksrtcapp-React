@@ -25,13 +25,14 @@ const SignIn = () => {
             if (Response.data.status == "success") {
                 sessionStorage.setItem("token",Response.data.token)
                 sessionStorage.setItem("userid",Response.data.userid)
+                navigate("/dashboard")
                 
             } else {
                 alert("Error")
             }
         }).catch()
     }
-    
+    let navigate=useNavigate()
     return (
         <div>
 
